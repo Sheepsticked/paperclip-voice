@@ -1,0 +1,23 @@
+{
+  "name": "paperclip-voice",
+  "version": "0.5.0",
+  "private": true,
+  "description": "Paperclip plugin: dictate comments and task text, transcribed on a local GPU or CPU.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/*.test.js"
+  },
+  "paperclipPlugin": {
+    "manifest": "./dist/manifest.js",
+    "worker": "./dist/worker.js",
+    "ui": "./dist/ui"
+  },
+  "dependencies": {
+    "@paperclipai/plugin-sdk": "2026.1012.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "playwright-core": "1.64.1"
+  }
+}
